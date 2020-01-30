@@ -16,4 +16,8 @@ export class InicioSesionService {
 
     return this.http.post<InicioSesion>('http://my-json-server.typicode.com/brayan1119/curso-angular/login', param);
   }
+
+  listarUsuarios() {
+    return this.http.get('http://my-json-server.typicode.com/brayan1119/curso-angular/usuarios');
+  }
 }
